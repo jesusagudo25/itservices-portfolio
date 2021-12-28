@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+header{
+    background-color: #FFFFFF;
+    height: 88px;
+}
+
+.logo-pagina img{
+    width: 200px;
+    height: 50px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #5A5A5A;
+}
+
+nav ul li a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+header .contenedor{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header .contenedor nav ul{
+    display: flex;
+}
+
+header .contenedor nav ul li{
+    margin-left: 20px;
+}
+
+.page-portada{
+    background-image: url("../img/slider3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+}
+
+.page-portada .contenedor{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-portada .contenedor h1, .page-portada .contenedor h2, .page-portada p{
+    margin-bottom: 25px;
+    color: white;
+}
+
+.page-portada .contenedor h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.page-portada .contenedor h2{
+    font-size: 25px;
+}
+
+.page-portada .contenedor p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.seccion-historia{
+    background-color: white;
+    padding: 60px 0px;
+}
+
+.seccion-historia .contenedor{
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-historia .contenedor h2, .seccion-historia .contenedor p{
+    margin-bottom: 25px;
+}
+
+.seccion-historia .contenedor h2{
+    font-size: 34px;
+    font-weight: lighter;
+    color: #DD820D;
+}
+
+.seccion-historia .contenedor p{
+    text-align: center;
+    font-size: 18px;
+    color: #5A5A5A;
+}
+
+.seccion-equipo{
+    background-color: #F2F2F2;
+    padding: 60px 0px;
+}
+
+.seccion-equipo .contenedor{
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-equipo .contenedor h2{
+    margin-bottom: 25px;
+    font-size: 34px;
+    font-weight: lighter;
+    color: #0F0472;
+}
+
+.seccion-equipo .contenedor table, .seccion-equipo .contenedor table tr td{
+    border: 1px solid #eee;
+}
+
+.seccion-equipo .contenedor table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+    0px 10px 20px rgba(0,0,0,0.05),
+    0px 20px 20px rgba(0,0,0,0.05),
+    0px 30px 20px rgba(0,0,0,0.05);
+    background-color: white;
+    opacity: 0.9;
+}
+
+.seccion-equipo .contenedor table tr td{
+    padding: 10px 20px;
+    color: black;
+}
+
+.seccion-equipo .contenedor table tr td img{
+    border-radius: 50%;
+}
+
+.seccion-equipo .contenedor table tr td.trabajo{
+    font-weight: bold;
+    color: #3595EA;
+}
+
+.seccion-contactanos{
+    background-color: white;
+    padding: 60px 0px;
+}
+
+.seccion-contactanos .contenedor{
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-contactanos .contenedor h2, .seccion-contactanos .contenedor p, .seccion-contactanos .contenedor a{
+    margin-bottom: 25px;
+}
+
+.seccion-contactanos .contenedor h2{
+    font-size: 34px;
+    font-weight: lighter;
+    color: #DD820D;
+}
+
+.seccion-contactanos .contenedor p{
+    text-align: center;
+    font-size: 18px;
+    color: #5A5A5A;
+}
+
+.seccion-contactanos .contenedor a{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 44px;
+    text-decoration: none;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+.seccion-contactanos .contenedor a:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #1E2B38;
+    padding: 60px 0px;
+}
+
+footer .contenedor{
+    justify-content: space-evenly;
+}
+
+footer .contenedor a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 44px;
+}
+
+.fab{
+    font-size: 30px;
+}
+
+#twitter:hover{
+    background-color: #1DA1F2;
+}
+#facebook:hover{
+    background-color: #3B5998;
+}
+#youtube:hover{
+    background-color: #FF0000;
+}
+#github:hover{
+    background-color: #333333;
+}
+#instagram:hover{
+    background-color: #833ab4;
+}

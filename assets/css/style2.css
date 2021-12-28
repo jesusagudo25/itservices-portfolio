@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+header{
+    background-color: #FFFFFF;
+    height: 88px;
+}
+
+.logo-pagina img{
+    width: 200px;
+    height: 50px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #5A5A5A;
+}
+
+nav ul li a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header .contenedor nav ul{
+    display: flex;
+}
+
+header .contenedor nav ul li{
+    margin-left: 20px;
+}
+
+.page-portada{
+    background-image: url("../img/slider.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+}
+
+.page-portada .contenedor{
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-portada .contenedor h1, .page-portada p{
+    margin-bottom: 25px;
+    color: white;
+}
+
+.page-portada .contenedor h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.page-portada .contenedor p{
+    text-align: center;
+    font-size: 18px;
+}
+
+.seccion-servicios{
+    background-color: #F2F2F2;
+    padding: 60px 0px;
+}
+
+.seccion-servicios .contenedor{
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-servicios .contenedor h2{
+    margin-bottom: 25px;
+    font-size: 34px;
+    font-weight: lighter;
+    color: #0F0472;
+}
+
+.seccion-servicios .contenedor .contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.seccion-servicios .contenedor .contenedor-servicios .servicios img{
+    width: 216.312px;
+    height: 216.312px;
+    border-radius: 5px;
+}
+
+.seccion-servicios .contenedor .contenedor-servicios .servicios figcaption{
+    font-size: 16px;
+    color: #3595EA;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.seccion-escuchanos{
+    background-color: white;
+    padding: 60px 0px;
+}
+
+.seccion-escuchanos .contenedor{
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-escuchanos .contenedor h2{
+    margin-bottom: 25px;
+    font-size: 34px;
+    font-weight: lighter;
+    color: #DD820D;
+}
+
+footer{
+    background-color: #1E2B38;
+    padding: 60px 0px;
+}
+
+footer .contenedor{
+    justify-content: space-evenly;
+}
+
+footer .contenedor a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 44px;
+}
+
+.fab{
+    font-size: 30px;
+}
+
+#twitter:hover{
+    background-color: #1DA1F2;
+}
+#facebook:hover{
+    background-color: #3B5998;
+}
+#youtube:hover{
+    background-color: #FF0000;
+}
+#github:hover{
+    background-color: #333333;
+}
+#instagram:hover{
+    background-color: #833ab4;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios 24/7 para acompañarlo en todo momento."/>
+    <meta name="robots" content="index,follow" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico"/>
+    <link rel="stylesheet" href="./assets/css/style3.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Contácto - Jatec</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <figure class="logo-pagina">
+                <img src="./assets/img/logo.png" alt="Logo Jatec">
+            </figure>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./nosotros.html">Nosotros</a></li>
+                    <li><a href="./servicios.html">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- La imagen ira de background - page-portada -->
+    <div class="page-portada">
+        <div class="contenedor">
+            <h1>Contáctenos</h1>
+            <h2>Servicios 24/7 para acompañarlo en todo momento</h2>
+            <p>Estamos para asistirles en todos sus Proyectos de Tecnología.</p>
+        </div>
+    </div>
+
+        <main>
+            <!-- Lo que pasa es que este main tiene un flex de 70%, pero este valor no se inserta en el width, esto quiere decir
+            que cuando los elementos quieran ocupar el 100% (o 90%) de este contenedor, practicamente no tendra un valor fijo..
+            y se podra desbordar...-->
+
+            <!-- Ya que si vemos todos los elementos cuando se desbordan, los contenedores quedan en 1000px -->
+
+            <!-- Pero esto pasa cuando existen por lo menos texareas -->
+
+            <!-- En realidad aqui lo que hay que hacer es que cuando llega ha cierta resolucion hay que aplicarle un 
+            flex direction column 
+            
+            o ya si quieres que no pase esto digamos previniendo para cualquiera pantalla que se presente seria flex auto y insertar
+            un width
+        
+            Conclusion:
+            
+            Esto pasa por ausencia de un width en el main, ya que muchos elementos hijos dependen de este tamaño..
+            No habria problema en aplicar un flex 70% en una pagina que no tenga un textarea
+            las soluciones estan en: 
+            
+            insertar un width y un flex auto en el main, previniendo que no pase en ninguna resolucion... y luego insertar
+            un flex direction column en la resolucion que se desee
+            
+            o simplemente manejarlo con un flex direction column a partir de una resolucion que se empiecen a pegar las cosas..-->
+
+            <section class="seccion-ubicacion">
+                <div class="contenedor">
+                    <h2>Aquí estamos</h2>
+                    <p>Santiago de Veraguas, Panamá
+                        <br/>
+                        <br/>
+                        info@jatec.com
+                        <br/>
+                        <br/>
+                        LLÁMANOS<br/>
+                        +507 6477-8051
+                    </p>
+                </div>
+            </section>
+
+            <section class="seccion-video">
+                <div class="contenedor">
+                    <h2>Los mejores servicios tecnológicos</h2>
+                    <video controls>
+                        <source src="./assets/video/output_free.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </section>
+
+            <section class="seccion-contactanos">
+                <!-- ocupara un width de 100% en el contenedor (main) -->
+
+                <div class="contenedor">
+                    <!-- El width es el 90% del contenedor (seccion-contactanos) pero solamente podra llegar hasta 1000px (maximo...)
+
+                        creo que esto esta relacionado con el main directamente
+
+                    
+                    -->
+
+                    <h2>Contacto</h2>
+                    <form action="" method="">
+                        <!-- El width es el 100% del contenedor (div.contenedor) -->
+
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required autocomplete="name">
+                        <input type="email" name="email" id="email" placeholder="Correo" required autocomplete="email">
+                        <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required ></textarea>
+                        <!-- Tiene un minimo del 100% del contenedor y un maximo del 100% -->
+
+                        <input type="submit" value="Enviar">
+                    </form>
+
+                </div>
+            </section>
+        </main>
+
+    <footer>
+        <div class="contenedor">
+            <a id="twitter" href="https://twitter.com/jatec"><i class="fab fa-twitter-square"></i></a>
+            <a id="facebook" href="https://facebook.com/jatec"><i class="fab fa-facebook-square"></i></a>
+            <a id="youtube" href="https://youtube.com/jatec"><i class="fab fa-youtube"></i></a>
+            <a id="github" href="https://github.com/jatec"><i class="fab fa-github"></i></a>
+            <a id="instagram" href="https://instagram.com/jatec"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
